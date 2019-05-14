@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <title>login2</title>
+      <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="t1.css">
+    <link href="/app.js" rel="preload" as="script"></head>
+  <body>
+    <noscript>
+      <strong>We're sorry but login doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+   <my-login
+      backend= 'login'
+      register= 'false'
+   >
+   </my-login>
+    <!-- built files will be auto injected -->
+  <script type="text/javascript" src="/app.js"></script></body>
+  <script>
+    var loginComponent = document.querySelector('my-login');
+    loginComponent.addEventListener("clicked",
+            function(data){
+            console.log(data);
+            });
+  </script>
+  </html>
