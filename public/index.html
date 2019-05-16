@@ -20,6 +20,7 @@
     <div sytle="width: 150px;">
       <div id="result"></div>
     </div>
+    <script src="custom-elements.min.js"></script>
     <script src="./angular/main.js"></script>
     <script src="./angular/vkb-elements.js"></script>
     <script src="https://unpkg.com/vue"></script>
@@ -27,15 +28,15 @@
 
     <script>
       window.onload = function() {
-        var hello = document.querySelector("vkb-input");
-        hello.addEventListener("valueChanged", function(e) {
+        var hello = document.querySelector('vkb-input');
+        hello.addEventListener('valueChanged', function(e) {
           console.log(e.detail);
         });
 
-        const elem = document.getElementById("helloworld");
-        const elemResult = document.getElementById("result");
+        const elem = document.getElementById('helloworld');
+        const elemResult = document.getElementById('result');
 
-        elem.addEventListener("clickHelloWorld", e => {
+        elem.addEventListener('clickHelloWorld', e => {
           const data = e.detail;
           console.log(e);
           elemResult.innerHTML = `${data.message} from angular-component`;
