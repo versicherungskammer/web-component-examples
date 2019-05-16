@@ -12,13 +12,27 @@
     <base href="/" />
   </head>
   <body>
-    <my-login id="login" backend="login" register="false"></my-login>
-    <div style="width: 150px;">
+    <div
+      style="width: 300px; height: 400px; border-style: dashed; padding: 10px; margin-bottom: 5px;"
+    >
+      <h3 style="margin-bottom: 15px;">Webcomponent Vue</h3>
+      <my-login id="login" backend="login" register="false"></my-login>
+    </div>
+
+    <div
+      style="width: 300px; height: 300px; border-style: dashed; padding: 10px;margin-bottom: 5px;"
+    >
+      <h3 style="margin-bottom: 15px;">Webcomponent Angular</h3>
       <vkb-input value="Eingabe"></vkb-input>
     </div>
-    <ng-hello-world id="helloworld" message="Giesing"></ng-hello-world>
-    <div sytle="width: 150px;">
-      <div id="result"></div>
+    <div
+      style="width: 300px; height: 300px; border-style: dashed; padding: 10px;margin-bottom: 5px;"
+    >
+      <h3 style="margin-bottom: 15px;">Webcomponent Angular</h3>
+      <ng-hello-world id="helloworld" message="Giesing"></ng-hello-world>
+      <div style="width: 150px;">
+        <div id="result"></div>
+      </div>
     </div>
     <script src="custom-elements.min.js"></script>
     <script src="./angular/main.js"></script>
