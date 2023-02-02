@@ -9,7 +9,7 @@
     "css-loader": "^2.1.1",
     "jss": "latest",
     "material-ui": "^0.20.2",
-    "npm": "^6.7.0",
+    "npm": "^9.4.0",
     "prop-types": "latest",
     "react": "latest",
     "react-custom-element": "^1.0.0",
